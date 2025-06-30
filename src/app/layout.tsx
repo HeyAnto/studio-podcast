@@ -87,7 +87,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body className="flex flex-column items-center">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

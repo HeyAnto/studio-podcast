@@ -89,12 +89,15 @@ html {
 }
 
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: var(--font-primary);
   font-size: var(--text-16);
   line-height: var(--leading-16);
   color: var(--color-dark);
   background-color: var(--color-white);
-  min-height: 100vh;
 }
 
 /* === Selection Styles === */
