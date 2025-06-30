@@ -12,6 +12,29 @@ export const metadata: Metadata = {
   authors: [{ name: "Studio Podcast Team" }],
   creator: "Studio Podcast",
   publisher: "Studio Podcast",
+  icons: {
+    icon: [
+      {
+        url: "/favicons/favicon.ico",
+        sizes: "48x48",
+        type: "image/x-icon",
+      },
+      { url: "/favicons/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicons/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    other: [
+      {
+        url: "/favicons/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        url: "/favicons/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+    ],
+  },
   formatDetection: {
     email: false,
     address: false,
