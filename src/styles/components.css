@@ -8,11 +8,13 @@
   font-size: var(--text-18);
   line-height: var(--leading-18);
   cursor: pointer;
+  transition: all 0.3s;
 }
 
-.primaryButton .disabled {
+.primaryButton.disabled {
   background-color: var(--color-grey-4-hover);
   color: var(--color-grey);
+  pointer-events: none;
   cursor: not-allowed;
 }
 
