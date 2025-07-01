@@ -17,7 +17,7 @@
 }
 
 .headerLogo {
-  height: 38px;
+  height: 40px;
 }
 
 .nav ul li {
@@ -32,10 +32,6 @@
   border-radius: 6px;
   background-color: var(--color-white);
   color: var(--color-dark);
-  font-family: var(--font-primary);
-  font-weight: var(--weight-normal);
-  font-size: var(--text-16);
-  line-height: var(--leading-16);
   cursor: pointer;
 }
 

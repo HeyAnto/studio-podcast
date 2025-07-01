@@ -14,16 +14,16 @@ export default function Header() {
         <nav className={styles.nav}>
           <ul>
             <li>
-              <a href="/" className={styles.navLink}>
+              <a href="/" className={`${styles.navLink} text-base`}>
                 Location studio
               </a>
-              <a href="/" className={styles.navLink}>
+              <a href="/" className={`${styles.navLink} text-base`}>
                 Nos studios
               </a>
             </li>
           </ul>
         </nav>
-        <a href="/" className="primaryButton">
+        <a href="/" className="primaryButton text-base">
           Contactez-nous
         </a>
       </div>
