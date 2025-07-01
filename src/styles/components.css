@@ -1,0 +1,21 @@
+.primaryButton {
+  padding: 16px 20px;
+  border-radius: 6px;
+  background-color: var(--color-grey-4);
+  color: var(--color-dark);
+  font-family: var(--font-primary);
+  font-weight: var(--weight-normal);
+  font-size: var(--text-18);
+  line-height: var(--leading-18);
+  cursor: pointer;
+}
+
+.primaryButton .disabled {
+  background-color: var(--color-grey-4-hover);
+  color: var(--color-grey);
+  cursor: not-allowed;
+}
+
+.primaryButton:hover {
+  background-color: var(--color-grey-4-hover);
+}

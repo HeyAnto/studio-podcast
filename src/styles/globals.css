@@ -1,3 +1,4 @@
+@import url("components.css");
 @import url("utilities.css");
 
 /* Font Declarations */
@@ -188,4 +189,10 @@ button {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }

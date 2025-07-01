@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Header from "../components/Header";
 import "../styles/globals.css";
 import "../styles/layout.css";
 
@@ -87,7 +88,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
