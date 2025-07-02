@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import HeroSearch from "../components/hero-search/HeroSearch";
 
 export const metadata: Metadata = {
   title: "Studio Podcast",
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
 const HomePage = () => {
   return (
     <main>
-      <section className="hero">
+      <section className="gap-100">
         <div className="text-container gap-16">
           <h1 className="font-heading text-5xl leading-none text-center">
             Votre plateforme de référence pour la location de studios en France
@@ -26,6 +27,7 @@ const HomePage = () => {
             pour vos projets créatifs, partout en France.
           </p>
         </div>
+        <HeroSearch />
       </section>
     </main>
   );
