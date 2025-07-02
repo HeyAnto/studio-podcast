@@ -117,6 +117,14 @@ body {
   background-color: var(--color-green-3);
 }
 
+/* === Font Family Classes === */
+.font-primary {
+  font-family: var(--font-primary);
+}
+.font-heading {
+  font-family: var(--font-heading);
+}
+
 /* === Font Weight Classes === */
 .font-thin {
   font-weight: var(--weight-thin);
@@ -177,14 +185,6 @@ body {
 .text-6xl {
   font-size: var(--text-6xl);
   line-height: var(--leading-none);
-}
-
-/* === Font Family Classes === */
-.font-primary {
-  font-family: var(--font-primary);
-}
-.font-heading {
-  font-family: var(--font-heading);
 }
 
 /* === Line Height Classes === */

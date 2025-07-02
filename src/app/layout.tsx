@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import Header from "../components/Header";
+import Header from "../components/header/Header";
 import "../styles/globals.css";
 import "../styles/layout.css";
 
