@@ -15,8 +15,8 @@ export const metadata: Metadata = {
 
 const HomePage = () => {
   return (
-    <main>
-      <section className="gap-100">
+    <main className="gap-50">
+      <section className="gap-50">
         <div className="text-container gap-16">
           <h1 className="font-heading text-5xl leading-none text-center">
             Votre plateforme de référence pour la location de studios en France
@@ -28,6 +28,18 @@ const HomePage = () => {
           </p>
         </div>
         <HeroSearch />
+      </section>
+      <section className="gap-100">
+        <div className="text-container gap-16">
+          <h2 className="font-heading text-5xl leading-none text-center">
+            Découvrez le Studio Idéal selon Votre Projet
+          </h2>
+          <p className="text-lg leading-normal text-center text-grey-2">
+            Chaque projet créatif est unique, et nécessite un environnement
+            adapté. Chez Studio Podcast, nous avons regroupé des espaces
+            spécialement conçus pour exceller dans votre domaine.
+          </p>
+        </div>
       </section>
     </main>
   );

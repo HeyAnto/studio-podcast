@@ -41,8 +41,7 @@ export default function HeroSearch() {
         </button>
       </div>
       <img
-        className={styles.heroSearchImage}
-        src="/images/type-studio/img-hero-podcast.png"
+        src="/images/type-studio/img-home-podcast.png"
         alt="Studio Podcast"
       />
     </div>
