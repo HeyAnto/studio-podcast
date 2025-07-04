@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import CardHome from "../components/card-home/CardHome";
 import HeroSearch from "../components/hero-search/HeroSearch";
 
 export const metadata: Metadata = {
@@ -29,7 +30,7 @@ const HomePage = () => {
         </div>
         <HeroSearch />
       </section>
-      <section className="gap-100">
+      <section className="s-full justify-center gap-50">
         <div className="text-container gap-16">
           <h2 className="font-heading text-5xl leading-none text-center">
             Découvrez le Studio Idéal selon Votre Projet
@@ -39,6 +40,29 @@ const HomePage = () => {
             adapté. Chez Studio Podcast, nous avons regroupé des espaces
             spécialement conçus pour exceller dans votre domaine.
           </p>
+        </div>
+        <div className="flex flex-wrap items-center justify-center gap-16">
+          <CardHome
+            href="/"
+            imageSrc="/images/type-studio/img-home-podcast.png"
+            imageAlt="Studio Podcast"
+            title="Louer un Studio Podcast Professionnel"
+            description="Donnez une voix professionnelle à vos idées. Nos studios podcast sont insonorisés et équipés de microphones broadcast, tables de mixage et interfaces audio de pointe pour un son cristallin. Parfait pour interviews, monologues ou tables rondes."
+          />
+          <CardHome
+            href="/"
+            imageSrc="/images/type-studio/img-home-photo.png"
+            imageAlt="Studio Photo"
+            title="Trouver un Studio Photo pour vos Shootings"
+            description="Capturer l'instant parfait demande un cadre adapté. Nos studios photo offrent des fonds variés, des systèmes d'éclairage professionnels (flashs, LED), des espaces modulables pour portraits, mode, produits ou e-commerce. L'environnement idéal pour la lumière et la créativité."
+          />
+          <CardHome
+            href="/"
+            imageSrc="/images/type-studio/img-home-video.png"
+            imageAlt="Studio Vidéo"
+            title="Réserver un Studio Vidéo Équipé"
+            description="De la web-série au clip musical, nos studios vidéo sont conçus pour toutes vos productions. Profitez de fonds verts, cycloramas, éclairages cinéma, rails de travelling et espaces de post-production. Donnez vie à vos scénarios avec un équipement complet."
+          />
         </div>
       </section>
     </main>

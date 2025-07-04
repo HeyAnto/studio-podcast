@@ -49,6 +49,9 @@
 }
 
 /* Text Color */
+.text-grey {
+  color: var(--color-grey);
+}
 .text-grey-2 {
   color: var(--color-grey-2);
 }
@@ -112,4 +115,12 @@
 /* Margin Top */
 .mt-100 {
   margin: calc(var(--spacing-unit) * 50); /* 100px */
+}
+
+/* Border Radius */
+.rounded-6 {
+  border-radius: 6px;
+}
+.rounded-8 {
+  border-radius: 8px;
 }
