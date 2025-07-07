@@ -37,6 +37,14 @@
   align-items: flex-end;
 }
 
+/* Section */
+.max-w-md {
+  max-width: 1024px;
+}
+.min-h-screen {
+  min-height: 100vh;
+}
+
 /* Text Align */
 .text-left {
   text-align: left;

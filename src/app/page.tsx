@@ -32,7 +32,7 @@ const HomePage = () => {
         <HeroSearch />
       </section>
 
-      <section className="s-screen justify-center gap-50">
+      <section className="min-h-screen justify-center gap-50">
         <div className="text-container gap-16">
           <h2 className="font-heading text-5xl leading-none text-center">
             Découvrez le Studio Idéal selon Votre Projet
@@ -68,7 +68,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="s-screen justify-center gap-50">
+      <section className="max-w-md min-h-screen justify-center gap-50">
         <div className="text-container gap-16">
           <h2 className="font-heading text-5xl leading-none text-center">
             Vos Studios dans les Grandes Villes de France
