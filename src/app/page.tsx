@@ -24,9 +24,20 @@ const HomePage = () => {
             Votre plateforme de référence pour la location de studios en France
           </h1>
           <p className="text-lg leading-normal text-center text-grey-2">
-            Studio Podcast est l’annuaire de référence pour trouver et réserver
-            des studios podcast, photo et vidéo en France. Trouvez le lieu idéal
-            pour vos projets créatifs, partout en France.
+            Bienvenue sur Studio Podcast, l'annuaire incontournable pour les
+            créateurs de contenu en quête du lieu parfait. Que vous soyez
+            podcasteur, photographe, vidéaste ou musicien, nous simplifions la
+            recherche et la réservation de studios professionnels dans les plus
+            grandes villes de France. Notre mission ? Connecter les
+            propriétaires de studios avec les talents, pour des productions
+            réussies et de qualité.
+            <br />
+            <br />
+            Découvrez notre vaste catalogue de studios d'enregistrement, studios
+            photo et studios vidéo, équipés des dernières technologies et
+            adaptés à tous vos besoins créatifs. Prêt à concrétiser votre projet
+            ? Utilisez notre moteur de recherche intuitif pour trouver le studio
+            idéal, près de chez vous ou dans la ville de votre choix.
           </p>
         </div>
         <HeroSearch />
