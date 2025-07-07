@@ -16,8 +16,12 @@ section {
   padding: 50px 0;
 }
 
-.s-full {
+.s-screen {
   min-height: 100vh;
+}
+
+.s-medium {
+  max-width: 1024px;
 }
 
 .text-container {
@@ -26,14 +30,4 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.cardsHomeGrid {
-  display: flex;
-  flex-wrap: wrap;
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 16px;
-  grid-row-gap: 16px; */
 }

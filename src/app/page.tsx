@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import CardHome from "../components/card-home/CardHome";
+import CardCity from "../components/cards/CardCity";
+import CardHome from "../components/cards/CardHome";
 import HeroSearch from "../components/hero-search/HeroSearch";
 
 export const metadata: Metadata = {
@@ -30,7 +31,8 @@ const HomePage = () => {
         </div>
         <HeroSearch />
       </section>
-      <section className="s-full justify-center gap-50">
+
+      <section className="s-screen justify-center gap-50">
         <div className="text-container gap-16">
           <h2 className="font-heading text-5xl leading-none text-center">
             Découvrez le Studio Idéal selon Votre Projet
@@ -62,6 +64,52 @@ const HomePage = () => {
             imageAlt="Studio Vidéo"
             title="Réserver un Studio Vidéo Équipé"
             description="De la web-série au clip musical, nos studios vidéo sont conçus pour toutes vos productions. Profitez de fonds verts, cycloramas, éclairages cinéma, rails de travelling et espaces de post-production. Donnez vie à vos scénarios avec un équipement complet."
+          />
+        </div>
+      </section>
+
+      <section className="s-screen justify-center gap-50">
+        <div className="text-container gap-16">
+          <h2 className="font-heading text-5xl leading-none text-center">
+            Vos Studios dans les Grandes Villes de France
+          </h2>
+          <p className="text-lg leading-normal text-center text-grey-2">
+            Que votre projet soit à Paris, Lyon, Marseille ou au-delà, Studio
+            Podcast vous connecte aux meilleurs espaces locaux. Notre réseau
+            s'étend sur tout le territoire pour vous offrir un choix diversifié
+            et de proximité.
+          </p>
+        </div>
+        <div className="flex flex-wrap items-center justify-center gap-16">
+          <CardCity
+            href="/"
+            imageSrc="/images/city/img-city-paris.png"
+            imageAlt="Paris"
+            title="Paris"
+          />
+          <CardCity
+            href="/"
+            imageSrc="/images/city/img-city-lyon.png"
+            imageAlt="Lyon"
+            title="Lyon"
+          />
+          <CardCity
+            href="/"
+            imageSrc="/images/city/img-city-marseille.png"
+            imageAlt="Marseille"
+            title="Marseille"
+          />
+          <CardCity
+            href="/"
+            imageSrc="/images/city/img-city-nantes.png"
+            imageAlt="Nantes"
+            title="Nantes"
+          />
+          <CardCity
+            href="/"
+            imageSrc="/images/city/img-city-clermont-fd.png"
+            imageAlt="Clermont-Ferrand"
+            title="Clermont-Ferrand"
           />
         </div>
       </section>

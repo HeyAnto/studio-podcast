@@ -9,7 +9,7 @@ export default function CardHome({
 }) {
   return (
     <a className="cardHome flex flex-column gap-16 p-16 rounded-6" href={href}>
-      <img src={imageSrc} alt={imageAlt} />
+      <img className="rounded-8" src={imageSrc} alt={imageAlt} />
       <div className="flex flex-column gap-16">
         <div className="flex justify-between gap-16">
           <h3 className="text-2xl">{title}</h3>
