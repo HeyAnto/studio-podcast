@@ -1,4 +1,4 @@
-export default function CardCity({
+export default function CityCard({
   href = "/",
   imageSrc = "/images/city/img-city-paris.png",
   imageAlt = "Paris",

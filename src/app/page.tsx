@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import CardCity from "../components/cards/CardCity";
-import CardHome from "../components/cards/CardHome";
+import CityCard from "../components/cards/CityCard";
+import HomeCard from "../components/cards/HomeCard";
 import HeroSearch from "../components/hero-search/HeroSearch";
 
 export const metadata: Metadata = {
@@ -55,21 +55,21 @@ const HomePage = () => {
           </p>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-16">
-          <CardHome
+          <HomeCard
             href="/"
             imageSrc="/images/type-studio/img-home-podcast.png"
             imageAlt="Studio Podcast"
             title="Louer un Studio Podcast Professionnel"
             description="Donnez une voix professionnelle à vos idées. Nos studios podcast sont insonorisés et équipés de microphones broadcast, tables de mixage et interfaces audio de pointe pour un son cristallin. Parfait pour interviews, monologues ou tables rondes."
           />
-          <CardHome
+          <HomeCard
             href="/"
             imageSrc="/images/type-studio/img-home-photo.png"
             imageAlt="Studio Photo"
             title="Trouver un Studio Photo pour vos Shootings"
             description="Capturer l'instant parfait demande un cadre adapté. Nos studios photo offrent des fonds variés, des systèmes d'éclairage professionnels (flashs, LED), des espaces modulables pour portraits, mode, produits ou e-commerce. L'environnement idéal pour la lumière et la créativité."
           />
-          <CardHome
+          <HomeCard
             href="/"
             imageSrc="/images/type-studio/img-home-video.png"
             imageAlt="Studio Vidéo"
@@ -92,31 +92,31 @@ const HomePage = () => {
           </p>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-16">
-          <CardCity
+          <CityCard
             href="/"
             imageSrc="/images/city/img-city-paris.png"
             imageAlt="Paris"
             title="Paris"
           />
-          <CardCity
+          <CityCard
             href="/"
             imageSrc="/images/city/img-city-lyon.png"
             imageAlt="Lyon"
             title="Lyon"
           />
-          <CardCity
+          <CityCard
             href="/"
             imageSrc="/images/city/img-city-marseille.png"
             imageAlt="Marseille"
             title="Marseille"
           />
-          <CardCity
+          <CityCard
             href="/"
             imageSrc="/images/city/img-city-nantes.png"
             imageAlt="Nantes"
             title="Nantes"
           />
-          <CardCity
+          <CityCard
             href="/"
             imageSrc="/images/city/img-city-clermont-fd.png"
             imageAlt="Clermont-Ferrand"

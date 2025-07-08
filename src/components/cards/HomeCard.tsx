@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 
-export default function CardHome({
+export default function HomeCard({
   href = "/",
   imageSrc = "/images/type-studio/img-home-podcast.png",
   imageAlt = "Studio Podcast",
