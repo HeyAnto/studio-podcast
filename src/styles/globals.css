@@ -57,6 +57,7 @@
   --text-4xl: 2.25rem; /* 36px */
   --text-5xl: 3rem; /* 48px */
   --text-6xl: 3.75rem; /* 60px */
+  --text-7xl: 7.5rem; /* 120px */
 
   /* Line Heights */
   --leading-none: 1;
@@ -184,6 +185,10 @@ body {
 }
 .text-6xl {
   font-size: var(--text-6xl);
+  line-height: var(--leading-none);
+}
+.text-7xl {
+  font-size: var(--text-7xl);
   line-height: var(--leading-none);
 }
 
