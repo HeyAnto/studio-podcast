@@ -1,8 +1,8 @@
 export default function CityCard({
   href = "/",
-  imageSrc = "/images/city/img-city-paris.png",
-  imageAlt = "Paris",
-  title = "Paris",
+  imageSrc = "Image",
+  imageAlt = "Image Alt",
+  title = "Ville",
 }) {
   return (
     <a className="cityCard flex items-center gap-16 p-16 rounded-6" href={href}>

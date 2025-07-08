@@ -2,10 +2,10 @@ import { Icon } from "@iconify/react";
 
 export default function HomeCard({
   href = "/",
-  imageSrc = "/images/type-studio/img-home-podcast.png",
-  imageAlt = "Studio Podcast",
-  title = "Louer un Studio Podcast Professionnel",
-  description = "Donnez une voix professionnelle à vos idées. Nos studios podcast sont insonorisés et équipés de microphones broadcast, tables de mixage et interfaces audio de pointe pour un son cristallin. Parfait pour interviews, monologues ou tables rondes.",
+  imageSrc = "Image",
+  imageAlt = "Image Alt",
+  title = "Titre de la carte",
+  description = "Description de la carte.",
 }) {
   return (
     <a className="homeCard flex flex-column gap-16 p-16 rounded-6" href={href}>

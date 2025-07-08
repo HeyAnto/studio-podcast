@@ -81,7 +81,7 @@
   color: var(--color-dark);
 }
 
-/* Card Home */
+/* Home Card */
 .homeCard {
   width: 100%;
   max-width: 400px;
@@ -108,7 +108,7 @@
   color: var(--color-dark);
 }
 
-/* Card City */
+/* City Card */
 .cityCard {
   width: 100%;
   max-width: 330px;
