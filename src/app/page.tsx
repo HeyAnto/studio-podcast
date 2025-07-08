@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import CityCard from "../components/cards/CityCard";
 import HomeCard from "../components/cards/HomeCard";
+import StepCard from "../components/cards/StepCard";
 import HeroSearch from "../components/hero-search/HeroSearch";
 
 export const metadata: Metadata = {
@@ -123,6 +124,39 @@ const HomePage = () => {
             title="Clermont-Ferrand"
           />
         </div>
+      </section>
+
+      <section className="max-w-md min-h-screen gap-50">
+        <div className="text-container gap-16">
+          <h2 className="font-heading text-5xl leading-none text-center">
+            Studio Podcast Votre Partenaire Créatif
+          </h2>
+          <p className="text-lg leading-normal text-center text-grey-2">
+            Notre engagement est double : offrir une visibilité maximale aux
+            propriétaires de studios d'enregistrement et simplifier la recherche
+            pour les créateurs. En rejoignant Studio Podcast, vous bénéficiez.
+          </p>
+        </div>
+        <div className="min-w-screen flex flex-column gap-16">
+          <StepCard
+            step="1"
+            title="D'un Référencement Optimisé"
+            description="Chaque studio bénéficie d'une page dédiée, optimisée pour le SEO local et sectoriel, augmentant sa visibilité auprès d'une audience qualifiée."
+          />
+          <StepCard
+            step="2"
+            title="D'une Plateforme Intuitive"
+            description="Trouvez, comparez et réservez facilement grâce à nos filtres avancés et nos descriptions détaillées."
+          />
+          <StepCard
+            step="3"
+            title="D'une Communauté Engagée"
+            description="Faites partie d'un réseau dynamique de professionnels et passionnés de l'audio et de l'image. Propriétaire de studio ? Référencez votre espace dès aujourd'hui et multipliez vos locations !"
+          />
+        </div>
+        <a className="secondaryButton" href="/">
+          <p className="text-base">Référencez votre espace</p>
+        </a>
       </section>
     </main>
   );
