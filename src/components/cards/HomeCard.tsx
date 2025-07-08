@@ -8,7 +8,7 @@ export default function HomeCard({
   description = "Donnez une voix professionnelle à vos idées. Nos studios podcast sont insonorisés et équipés de microphones broadcast, tables de mixage et interfaces audio de pointe pour un son cristallin. Parfait pour interviews, monologues ou tables rondes.",
 }) {
   return (
-    <a className="cardHome flex flex-column gap-16 p-16 rounded-6" href={href}>
+    <a className="homeCard flex flex-column gap-16 p-16 rounded-6" href={href}>
       <img className="rounded-8" src={imageSrc} alt={imageAlt} />
       <div className="flex flex-column gap-16">
         <div className="flex justify-between gap-16">
