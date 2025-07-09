@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import "../styles/globals.css";
 import "../styles/layout.css";
@@ -92,6 +93,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

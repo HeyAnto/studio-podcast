@@ -1,0 +1,39 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-white);
+  border-top: solid 1px var(--color-dark);
+}
+
+.footerContainer {
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
+  padding: 28px 50px;
+}
+
+.footerContainer div {
+  width: 100%;
+}
+
+.footerLogo {
+  height: 38px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav ul li {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
