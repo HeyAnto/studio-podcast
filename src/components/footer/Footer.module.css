@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 50px;
   background-color: var(--color-white);
   border-top: solid 1px var(--color-dark);
 }
@@ -20,6 +21,7 @@
 
 .footerContainer div {
   width: 100%;
+  gap: 28px;
 }
 
 .footerLogo {
@@ -34,6 +36,7 @@
 
 .nav ul li {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 50px;
 }
