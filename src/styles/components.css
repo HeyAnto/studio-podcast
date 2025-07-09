@@ -2,6 +2,7 @@
 .primaryButton {
   padding: 14px 18px;
   border-radius: 6px;
+  text-align: center;
   background-color: var(--color-grey-4);
   color: var(--color-dark);
   cursor: pointer;
@@ -23,6 +24,7 @@
 .secondaryButton {
   padding: 14px 18px;
   border-radius: 6px;
+  text-align: center;
   background-color: var(--color-green);
   color: var(--color-green-2);
   cursor: pointer;
@@ -38,6 +40,12 @@
 
 .secondaryButton:hover {
   background-color: var(--color-green-hover);
+}
+
+/* Link Button */
+.linkButton:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 /* Filter Studio Button */
