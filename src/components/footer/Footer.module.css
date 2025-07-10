@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 28px;
   background-color: var(--color-white);
   border-top: solid 1px var(--color-dark);
 }
@@ -21,7 +21,6 @@
 
 .footerContainer div {
   width: 100%;
-  gap: 28px;
 }
 
 .footerLogo {

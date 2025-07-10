@@ -17,21 +17,21 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/favicons/favicon.ico",
+        url: "/favicon/favicon.ico",
         sizes: "48x48",
         type: "image/x-icon",
       },
-      { url: "/favicons/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicons/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },
     ],
     other: [
       {
-        url: "/favicons/android-chrome-192x192.png",
+        url: "/favicon/android-chrome-192x192.png",
         sizes: "192x192",
         type: "image/png",
       },
       {
-        url: "/favicons/android-chrome-512x512.png",
+        url: "/favicon/android-chrome-512x512.png",
         sizes: "512x512",
         type: "image/png",
       },
@@ -50,10 +50,10 @@ export const metadata: Metadata = {
     siteName: "Studio Podcast",
     title: "Studio Podcast",
     description:
-      "Studio Podcast - Votre destination pour du contenu de qualité",
+      "Trouvez et louez votre studio d'enregistrement pour podcast, shooting photo ou production vidéo. Découvrez les meilleures adresses à Paris, Lyon, Marseille et plus encore.",
     images: [
       {
-        url: "/images/og-cover.jpg",
+        url: "/images/og-cover.webp",
         width: 1200,
         height: 630,
         alt: "Studio Podcast Cover Image",
