@@ -1,7 +1,7 @@
 "use client";
 
-import { Icon } from "@iconify/react";
 import { useState } from "react";
+import IconChevronDown from "../icons/IconChevronDown";
 import styles from "./Header.module.css";
 import LocationMenu from "./LocationMenu";
 
@@ -40,10 +40,9 @@ export default function Header() {
                   } text-sm`}
                 >
                   Location studio
-                  <Icon
-                    icon="pixelarticons:chevron-down"
-                    className={`${styles.navLinkIcon}`}
-                  />
+                  <div className={styles.navLinkIcon}>
+                    <IconChevronDown />
+                  </div>
                 </button>
                 <a href="/" className={`${styles.navLink} text-sm`}>
                   Nos studios

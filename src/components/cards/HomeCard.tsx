@@ -1,4 +1,4 @@
-import { Icon } from "@iconify/react";
+import IconLink from "../icons/IconLink";
 
 export default function HomeCard({
   href = "/",
@@ -13,7 +13,9 @@ export default function HomeCard({
       <div className="flex flex-column gap-16">
         <div className="flex justify-between gap-16">
           <h3 className="text-2xl">{title}</h3>
-          <Icon icon="pixelarticons:external-link" className="linkIcon" />
+          <div className="linkIcon">
+            <IconLink />
+          </div>
         </div>
         <p className="text-sm text-grey">{description}</p>
       </div>

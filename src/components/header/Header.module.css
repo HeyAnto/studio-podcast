@@ -48,11 +48,7 @@
 }
 
 .navLinkIcon {
-  height: 20px;
-}
-
-.navLink.active .navLinkIcon {
-  transform: rotate(180deg);
+  font-size: 16px;
 }
 
 .headerMenu {

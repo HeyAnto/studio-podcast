@@ -1,4 +1,6 @@
-import { Icon } from "@iconify/react";
+import IconPhoto from "../icons/IconPhoto";
+import IconPodcast from "../icons/IconPodcast";
+import IconVideo from "../icons/IconVideo";
 import styles from "./HeroSearch.module.css";
 
 export default function HeroSearch() {
@@ -7,15 +9,21 @@ export default function HeroSearch() {
       <div className={styles.heroSearchContainer}>
         <div className={styles.filterStudio}>
           <button className="filterStudioButton active">
-            <Icon icon="pixelarticons:volume-2" className="filterStudioIcon" />
+            <div className="filterStudioIcon">
+              <IconPodcast />
+            </div>
             <p className="text-base">Podcast</p>
           </button>
           <button className="filterStudioButton">
-            <Icon icon="pixelarticons:image" className="filterStudioIcon" />
+            <div className="filterStudioIcon">
+              <IconPhoto />
+            </div>
             <p className="text-base">Photo</p>
           </button>
           <button className="filterStudioButton">
-            <Icon icon="pixelarticons:video" className="filterStudioIcon" />
+            <div className="filterStudioIcon">
+              <IconVideo />
+            </div>
             <p className="text-base">Vidéo</p>
           </button>
         </div>
