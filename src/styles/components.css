@@ -53,7 +53,10 @@
   width: 100%;
   max-width: 150px;
   min-width: 150px;
-  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
   padding: 20px;
   border-radius: 6px;
   background-color: var(--color-white);
@@ -73,6 +76,7 @@
 }
 
 .filterStudioIcon {
+  height: 34px;
   font-size: 30px;
 }
 
@@ -112,6 +116,7 @@
 }
 
 .linkIcon {
+  height: 28px;
   font-size: 24px;
 }
 
