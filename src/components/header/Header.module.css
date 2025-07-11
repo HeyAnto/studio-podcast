@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 14px 18px;
+  padding: 12px 14px;
   border-radius: 6px;
   background-color: var(--color-white);
   color: var(--color-dark);
@@ -49,7 +49,6 @@
 
 .navLinkIcon {
   height: 20px;
-  transition: transform 0.2s ease;
 }
 
 .navLink.active .navLinkIcon {
@@ -58,11 +57,11 @@
 
 .headerMenu {
   width: 100%;
-  position: fixed;
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding-top: 108px;
   background-color: var(--color-white);
   z-index: 20;
@@ -101,16 +100,6 @@
 .overlay {
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(160, 161, 161, 0.4);
   z-index: 10;
-  animation: fadeIn 0.2s ease-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }

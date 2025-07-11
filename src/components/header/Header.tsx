@@ -1,7 +1,7 @@
 "use client";
 
 import { Icon } from "@iconify/react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from "./Header.module.css";
 import LocationMenu from "./LocationMenu";
 
@@ -15,18 +15,6 @@ export default function Header() {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
-
-  useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
-
-    return () => {
-      document.body.style.overflow = "unset";
-    };
-  }, [isMenuOpen]);
 
   return (
     <>
@@ -42,14 +30,14 @@ export default function Header() {
           <nav className={styles.nav}>
             <ul>
               <li>
-                <a href="/" className={`${styles.navLink} text-base`}>
+                <a href="/" className={`${styles.navLink} text-sm`}>
                   Trouver un studio
                 </a>
                 <button
                   onClick={toggleMenu}
                   className={`${styles.navLink} ${
                     isMenuOpen ? styles.active : ""
-                  } text-base`}
+                  } text-sm`}
                 >
                   Location studio
                   <Icon
@@ -57,7 +45,7 @@ export default function Header() {
                     className={`${styles.navLinkIcon}`}
                   />
                 </button>
-                <a href="/" className={`${styles.navLink} text-base`}>
+                <a href="/" className={`${styles.navLink} text-sm`}>
                   Nos studios
                 </a>
               </li>
