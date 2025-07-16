@@ -1,5 +1,6 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import IconChevronDown from "../icons/IconChevronDown";
 import styles from "./Header.module.css";
@@ -7,6 +8,7 @@ import LocationMenu from "./LocationMenu";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -14,6 +16,13 @@ export default function Header() {
 
   const closeMenu = () => {
     setIsMenuOpen(false);
+  };
+
+  const isActive = (href: string) => {
+    if (href === "/") {
+      return pathname === "/";
+    }
+    return pathname === href;
   };
 
   return (
@@ -30,7 +39,12 @@ export default function Header() {
           <nav className={styles.nav}>
             <ul>
               <li>
-                <a href="/" className={`${styles.navLink} text-sm`}>
+                <a
+                  href="/location-studio"
+                  className={`${styles.navLink} ${
+                    isActive("/location-studio") ? styles.active : ""
+                  } text-sm`}
+                >
                   Trouver un studio
                 </a>
                 <button
@@ -44,7 +58,12 @@ export default function Header() {
                     <IconChevronDown />
                   </div>
                 </button>
-                <a href="/" className={`${styles.navLink} text-sm`}>
+                <a
+                  href="/studios"
+                  className={`${styles.navLink} ${
+                    isActive("/studios") ? styles.active : ""
+                  } text-sm`}
+                >
                   Nos studios
                 </a>
               </li>
