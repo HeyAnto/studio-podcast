@@ -41,6 +41,7 @@
 
 .navLink.active {
   background-color: var(--color-grey-4);
+  pointer-events: none;
 }
 
 .navLink:hover {
@@ -87,6 +88,11 @@
 
 .menuCard:hover {
   background-color: var(--color-grey-4);
+}
+
+.menuCard.active {
+  background-color: var(--color-grey-4);
+  pointer-events: none;
 }
 
 .cardImg {
