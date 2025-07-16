@@ -90,6 +90,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
+      <head>
+        <link
+          rel="preload"
+          href="/fonts/BDOGrotesk-VF.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/Redaction_35-Bold.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body>
         <Header />
         {children}
