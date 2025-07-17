@@ -10,12 +10,7 @@ export default function ContentHero({
           {title}
         </h1>
       </div>
-      <img
-        className="rounded-6"
-        style={{ objectFit: "cover", width: "100%", height: "540px" }}
-        src={coverImg}
-        alt={title}
-      />
+      <img className="contentCover rounded-6" src={coverImg} alt={title} />
       <div className="text-container gap-16">
         <p
           className="text-lg leading-normal text-grey-2"
