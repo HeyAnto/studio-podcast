@@ -60,17 +60,20 @@
 }
 
 /* Text Color */
+.text-dark {
+  color: var(--color-dark);
+}
 .text-grey {
   color: var(--color-grey);
 }
 .text-grey-2 {
   color: var(--color-grey-2);
 }
-.text-green-3 {
-  color: var(--color-green-3);
-}
 .text-green-2 {
   color: var(--color-green-2);
+}
+.text-green-3 {
+  color: var(--color-green-3);
 }
 
 /* Gap */
