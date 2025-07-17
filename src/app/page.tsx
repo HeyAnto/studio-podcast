@@ -57,21 +57,21 @@ const HomePage = () => {
         </div>
         <div className="flex flex-wrap items-center justify-center gap-16">
           <HomeCard
-            href="/"
+            href="/location-studio/podcast"
             imageSrc="/images/type-studio/img-home-podcast.png"
             imageAlt="Studio Podcast"
             title="Louer un Studio Podcast Professionnel"
             description="Donnez une voix professionnelle à vos idées. Nos studios podcast sont insonorisés et équipés de microphones broadcast, tables de mixage et interfaces audio de pointe pour un son cristallin. Parfait pour interviews, monologues ou tables rondes."
           />
           <HomeCard
-            href="/"
+            href="/location-studio/photo"
             imageSrc="/images/type-studio/img-home-photo.png"
             imageAlt="Studio Photo"
             title="Trouver un Studio Photo pour vos Shootings"
             description="Capturer l'instant parfait demande un cadre adapté. Nos studios photo offrent des fonds variés, des systèmes d'éclairage professionnels (flashs, LED), des espaces modulables pour portraits, mode, produits ou e-commerce. L'environnement idéal pour la lumière et la créativité."
           />
           <HomeCard
-            href="/"
+            href="/location-studio/video"
             imageSrc="/images/type-studio/img-home-video.png"
             imageAlt="Studio Vidéo"
             title="Réserver un Studio Vidéo Équipé"
