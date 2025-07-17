@@ -1,3 +1,4 @@
+import ContentFooter from "@/components/contentSections/ContentFooter";
 import ContentHero from "@/components/contentSections/ContentHero";
 import ContentList from "@/components/contentSections/ContentList";
 import type { Metadata } from "next";
@@ -159,6 +160,13 @@ const LocationStudioPage = () => {
           />
         </div>
       </section>
+      <ContentFooter
+        title="Prêt à concrétiser votre projet ?"
+        description={`Trouvez le studio qui fera la différence pour votre prochaine production !`}
+        button="Nos studios"
+        buttonLink="/studios"
+        footerImg="/images/type-studio/img-footer-podcast.png"
+      />
     </main>
   );
 };
