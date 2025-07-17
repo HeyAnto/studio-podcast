@@ -197,3 +197,25 @@
   font-size: 20px;
 }
 
+/* Content Footer */
+.contentFooter {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  padding: 50px;
+  background-color: var(--color-green);
+}
+
+.contentFooter div {
+  width: 100%;
+  max-width: 600px;
+}
+
+.footerImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+}
