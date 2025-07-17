@@ -24,6 +24,48 @@ const LocationStudioPage = () => {
         Notre annuaire vous propose des studios équipés des dernières technologies, accessibles et conçus pour stimuler votre inspiration. Explorez les options disponibles pour chaque type de besoin spécifique.`}
         coverImg="/images/location-studio/img-cover-location-studio.webp"
       />
+
+      <section className="max-w-md justify-center gap-50">
+        <div className="text-container gap-16">
+          <h2 className="font-heading text-5xl leading-none text-center">
+            Choisissez l'espace idéal pour votre projet créatif
+          </h2>
+          <p className="text-lg leading-normal text-center text-grey-2">
+            Nous avons regroupé nos studios par spécialité pour vous aider à
+            trouver rapidement l'environnement technique et créatif qui fera la
+            différence pour votre production.
+          </p>
+        </div>
+
+        <div className="contentCard items-center gap-28">
+          <div className="flex flex-column gap-16">
+            <h3 className="text-2xl text-center leading-none">
+              Location Studio Podcast
+            </h3>
+            <p className="text-lg leading-normal text-grey-2">
+              Donnez une voix professionnelle à vos idées. Nos studios podcast
+              sont des havres de paix acoustiques, conçus pour des
+              enregistrements sans compromis. Entièrement insonorisés et équipés
+              de microphones broadcast, de tables de mixage intuitives et
+              d'interfaces audio de haute qualité, ils garantissent un son
+              cristallin pour vos interviews, monologues ou tables rondes.
+            </p>
+          </div>
+          <div className="flex flex-column gap-16">
+            <ContentList
+              title="Idéal pour :"
+              description={`Enregistrement de podcasts, voix-off, livres audio, émissions de radio.`}
+            />
+            <ContentList
+              title="Votre avantage :"
+              description={`Une qualité audio professionnelle sans les contraintes techniques, pour vous concentrer sur votre contenu.`}
+            />
+          </div>
+          <a className="secondaryButton" href="/location-studio/podcast">
+            <p className="text-base">Découvrir nos Studios Podcast</p>
+          </a>
+        </div>
+
     </main>
   );
 };
