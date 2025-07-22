@@ -160,6 +160,7 @@ const LocationStudioPage = () => {
           />
         </div>
       </section>
+
       <ContentFooter
         title="Prêt à concrétiser votre projet ?"
         description={`Trouvez le studio qui fera la différence pour votre prochaine production !`}

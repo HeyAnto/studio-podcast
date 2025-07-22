@@ -5,7 +5,7 @@ export default function ContentList({
   description = "Description",
 }) {
   return (
-    <div className="flex gap-16">
+    <div className="min-w-screen flex gap-16">
       <div className="iconList">
         <IconArrowRight />
       </div>
