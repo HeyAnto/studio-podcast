@@ -50,7 +50,7 @@ const LocationStudioPage = () => {
         </div>
       </section>
 
-      <section className="max-w-md min-h-screen justify-center gap-50">
+      <section className="max-w-md justify-center gap-50">
         <div className="text-container gap-16">
           <h2 className="font-heading text-5xl leading-none text-center">
             Trouvez votre studio podcast dans votre ville
