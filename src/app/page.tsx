@@ -57,22 +57,22 @@ const HomePage = () => {
         </div>
         <div className="flex flex-wrap items-center justify-center gap-16">
           <HomeCard
-            href="/location-studio/podcast"
-            imageSrc="/images/type-studio/img-home-podcast.png"
+            href="/location-studio/studio-podcast"
+            imageSrc="/images/type-studio/img-home-podcast.webp"
             imageAlt="Studio Podcast"
             title="Louer un Studio Podcast Professionnel"
             description="Donnez une voix professionnelle à vos idées. Nos studios podcast sont insonorisés et équipés de microphones broadcast, tables de mixage et interfaces audio de pointe pour un son cristallin. Parfait pour interviews, monologues ou tables rondes."
           />
           <HomeCard
-            href="/location-studio/photo"
-            imageSrc="/images/type-studio/img-home-photo.png"
+            href="/location-studio/studio-photo"
+            imageSrc="/images/type-studio/img-home-photo.webp"
             imageAlt="Studio Photo"
             title="Trouver un Studio Photo pour vos Shootings"
             description="Capturer l'instant parfait demande un cadre adapté. Nos studios photo offrent des fonds variés, des systèmes d'éclairage professionnels (flashs, LED), des espaces modulables pour portraits, mode, produits ou e-commerce. L'environnement idéal pour la lumière et la créativité."
           />
           <HomeCard
-            href="/location-studio/video"
-            imageSrc="/images/type-studio/img-home-video.png"
+            href="/location-studio/studio-video"
+            imageSrc="/images/type-studio/img-home-video.webp"
             imageAlt="Studio Vidéo"
             title="Réserver un Studio Vidéo Équipé"
             description="De la web-série au clip musical, nos studios vidéo sont conçus pour toutes vos productions. Profitez de fonds verts, cycloramas, éclairages cinéma, rails de travelling et espaces de post-production. Donnez vie à vos scénarios avec un équipement complet."
@@ -95,31 +95,31 @@ const HomePage = () => {
         <div className="flex flex-wrap items-center justify-center gap-16">
           <CityCard
             href="/"
-            imageSrc="/images/city/img-city-paris.png"
+            imageSrc="/images/city/img-city-paris.webp"
             imageAlt="Paris"
             title="Paris"
           />
           <CityCard
             href="/"
-            imageSrc="/images/city/img-city-lyon.png"
+            imageSrc="/images/city/img-city-lyon.webp"
             imageAlt="Lyon"
             title="Lyon"
           />
           <CityCard
             href="/"
-            imageSrc="/images/city/img-city-marseille.png"
+            imageSrc="/images/city/img-city-marseille.webp"
             imageAlt="Marseille"
             title="Marseille"
           />
           <CityCard
             href="/"
-            imageSrc="/images/city/img-city-nantes.png"
+            imageSrc="/images/city/img-city-nantes.webp"
             imageAlt="Nantes"
             title="Nantes"
           />
           <CityCard
             href="/"
-            imageSrc="/images/city/img-city-clermont-fd.png"
+            imageSrc="/images/city/img-city-clermont-fd.webp"
             imageAlt="Clermont-Ferrand"
             title="Clermont-Ferrand"
           />

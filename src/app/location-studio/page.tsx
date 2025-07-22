@@ -24,7 +24,7 @@ const LocationStudioPage = () => {
         description={`Paris, ville lumière et capitale de la création, offre un cadre incomparable pour tous vos projets audiovisuels. Sur Studio Podcast, découvrez une sélection raffinée de studios à louer à Paris, adaptés à l'enregistrement de podcasts, aux shootings photo professionnels et aux productions vidéo de haute volée. Que vous soyez dans le Marais, à Montmartre, près de la Tour Eiffel ou à Bastille, trouvez l'environnement idéal qui fera décoller votre projet.
 
         Notre annuaire vous propose des studios équipés des dernières technologies, accessibles et conçus pour stimuler votre inspiration. Explorez les options disponibles pour chaque type de besoin spécifique.`}
-        coverImg="/images/location-studio/img-cover-location-studio.webp"
+        coverImg="/images/type-studio/img-cover-location-studio.webp"
       />
 
       <section className="max-w-md justify-center gap-50">
@@ -63,7 +63,7 @@ const LocationStudioPage = () => {
               description={`Une qualité audio professionnelle sans les contraintes techniques, pour vous concentrer sur votre contenu.`}
             />
           </div>
-          <a className="secondaryButton" href="/location-studio/podcast">
+          <a className="secondaryButton" href="/location-studio/studio-podcast">
             <p className="text-base">Découvrir nos Studios Podcast</p>
           </a>
         </div>
@@ -93,7 +93,7 @@ const LocationStudioPage = () => {
               description={`Un cadre contrôlé et des équipements haut de gamme pour des photos toujours réussies.`}
             />
           </div>
-          <a className="secondaryButton" href="/location-studio/photo">
+          <a className="secondaryButton" href="/location-studio/studio-photo">
             <p className="text-base">Découvrir nos Studios Photo</p>
           </a>
         </div>
@@ -122,7 +122,7 @@ const LocationStudioPage = () => {
               description={`Un environnement technique complet et polyvalent pour des images de qualité cinématographique.`}
             />
           </div>
-          <a className="secondaryButton" href="/location-studio/video">
+          <a className="secondaryButton" href="/location-studio/studio-video">
             <p className="text-base">Découvrir nos Studios Vidéo</p>
           </a>
         </div>
@@ -165,7 +165,7 @@ const LocationStudioPage = () => {
         description={`Trouvez le studio qui fera la différence pour votre prochaine production !`}
         button="Nos studios"
         buttonLink="/studios"
-        footerImg="/images/type-studio/img-footer-podcast.png"
+        footerImg="/images/type-studio/img-footer-podcast.webp"
       />
     </main>
   );

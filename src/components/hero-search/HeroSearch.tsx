@@ -49,7 +49,7 @@ export default function HeroSearch() {
         </button>
       </div>
       <img
-        src="/images/type-studio/img-home-podcast.png"
+        src="/images/type-studio/img-home-podcast.webp"
         alt="Studio Podcast"
       />
     </div>

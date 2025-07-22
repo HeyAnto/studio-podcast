@@ -27,28 +27,28 @@ export default function HeaderMenu({ onOverlayClick }: HeaderMenuProps) {
       <div className={styles.headerMenu}>
         <div className={styles.menuContainer}>
           <MenuCard
-            href="/location-studio/podcast"
-            imageSrc="/images/type-studio/img-menu-podcast.png"
+            href="/location-studio/studio-podcast"
+            imageSrc="/images/type-studio/img-menu-podcast.webp"
             imageAlt="Image Alt"
             title="Studio Podcast"
             description="Description"
-            isActive={isActive("/location-studio/podcast")}
+            isActive={isActive("/location-studio/studio-podcast")}
           />
           <MenuCard
-            href="/location-studio/photo"
-            imageSrc="/images/type-studio/img-menu-photo.png"
+            href="/location-studio/studio-photo"
+            imageSrc="/images/type-studio/img-menu-photo.webp"
             imageAlt="Image Alt"
             title="Studio Photo"
             description="Description"
-            isActive={isActive("/location-studio/photo")}
+            isActive={isActive("/location-studio/studio-photo")}
           />
           <MenuCard
-            href="/location-studio/video"
-            imageSrc="/images/type-studio/img-menu-video.png"
+            href="/location-studio/studio-video"
+            imageSrc="/images/type-studio/img-menu-video.webp"
             imageAlt="Image Alt"
             title="Studio Vidéo"
             description="Description"
-            isActive={isActive("/location-studio/video")}
+            isActive={isActive("/location-studio/studio-video")}
           />
         </div>
       </div>
