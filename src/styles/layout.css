@@ -24,3 +24,11 @@ section {
   flex-direction: column;
   align-items: center;
 }
+
+.studios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
