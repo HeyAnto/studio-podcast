@@ -1,7 +1,9 @@
 import CityCard from "@/components/cards/CityCard";
+import StudioCard from "@/components/cards/StudioCard";
 import ContentFooter from "@/components/contentSections/ContentFooter";
 import ContentHero from "@/components/contentSections/ContentHero";
 import ContentList from "@/components/contentSections/ContentList";
+import studiosData from "@/data/studios.json";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -17,6 +19,11 @@ export const metadata: Metadata = {
 };
 
 const LocationStudioPage = () => {
+  // Filter podcast studios and take only the first 3
+  const podcastStudios = studiosData
+    .filter((studio) => studio.tag === "Podcast")
+    .slice(0, 3);
+
   return (
     <main className="gap-50">
       <ContentHero
@@ -126,6 +133,19 @@ const LocationStudioPage = () => {
             title="Cabine d'Enregistrement Insonorisée :"
             description={`Indispensable pour isoler votre son.`}
           />
+        </div>
+      </section>
+
+      <section className="max-w-md justify-center gap-50">
+        <div className="text-container gap-16">
+          <h2 className="font-heading text-5xl leading-none text-center">
+            Notre sélection de studios podcast (toutes villes confondues)
+          </h2>
+        </div>
+        <div className="studios-grid max-w-md">
+          {podcastStudios.map((studio) => (
+            <StudioCard key={studio.id} studio={studio} />
+          ))}
         </div>
       </section>
 
