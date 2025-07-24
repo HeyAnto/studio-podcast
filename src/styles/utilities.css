@@ -69,6 +69,9 @@
 .text-grey-2 {
   color: var(--color-grey-2);
 }
+.text-green {
+  color: var(--color-green);
+}
 .text-green-2 {
   color: var(--color-green-2);
 }
@@ -77,6 +80,9 @@
 }
 
 /* Gap */
+.gap-8 {
+  gap: calc(var(--spacing-unit) * 4); /* 8px */
+}
 .gap-16 {
   gap: calc(var(--spacing-unit) * 8); /* 16px */
 }
@@ -93,6 +99,9 @@
 /* Padding */
 .p-16 {
   padding: calc(var(--spacing-unit) * 8); /* 16px */
+}
+.p-20 {
+  padding: calc(var(--spacing-unit) * 10); /* 20px */
 }
 .p-28 {
   padding: calc(var(--spacing-unit) * 14); /* 28px */
