@@ -1,0 +1,134 @@
+[
+  {
+    "id": "spod-le-son-clair",
+    "title": "Le Son Clair",
+    "description": "Un studio podcast à Lyon réputé pour son acoustique impeccable et son atmosphère conviviale. Idéal pour les émissions et interviews.",
+    "rating": 4.7,
+    "size": 20,
+    "capacity": 8,
+    "tag": "Podcast",
+    "city": "Lyon",
+    "image": "/images/studios/podcast/img-spod-lyon-le-son-clair.webp"
+  },
+  {
+    "id": "spod-la-voix-dorée",
+    "title": "La Voix Dorée",
+    "description": "Situé en plein centre, ce studio d'enregistrement podcast à Nantes offre un équipement moderne et un accompagnement technique.",
+    "rating": 4.6,
+    "size": 18,
+    "capacity": 7,
+    "tag": "Podcast",
+    "city": "Nantes",
+    "image": "/images/studios/podcast/img-spod-nantes-la-voix-dorée.webp"
+  },
+  {
+    "id": "spod-londe-bleue",
+    "title": "L’Onde Bleue",
+    "description": "Situé près du Vieux-Port, ce studio d'enregistrement podcast à Marseille offre une ambiance chaleureuse avec un espace détente.",
+    "rating": 4.7,
+    "size": 22,
+    "capacity": 9,
+    "tag": "Podcast",
+    "city": "Marseille",
+    "image": "/images/studios/podcast/img-spod-marseille-londe-bleue.webp"
+  },
+  {
+    "id": "spod-le-micro-volcanique",
+    "title": "Le Micro Volcanique",
+    "description": "Situé dans le centre historique, ce studio podcast de Clermont-Ferrand offre un espace insonorisé avec micros Rode et assistance technique.",
+    "rating": 4.8,
+    "size": 20,
+    "capacity": 4,
+    "tag": "Podcast",
+    "city": "Clermont-Ferrand",
+    "image": "/images/studios/podcast/img-spod-clf-le-micro-volcanique.webp"
+  },
+  {
+    "id": "sphoto-lumiere-du-11e",
+    "title": "Lumière du 11e",
+    "description": "Studio photo lumineux dans le 11e à Paris avec fonds variés et éclairages professionnels.",
+    "rating": 4.7,
+    "size": 42,
+    "capacity": 6,
+    "tag": "Photo",
+    "city": "Paris",
+    "image": "/images/studios/photo/img-sphoto-paris-lumiere11.webp"
+  },
+  {
+    "id": "sphoto-studio-bellecour",
+    "title": "Studio Bellecour",
+    "description": "En plein centre de Lyon, ce studio photo propose lumière naturelle et cyclo pour vos shootings.",
+    "rating": 4.5,
+    "size": 38,
+    "capacity": 8,
+    "tag": "Photo",
+    "city": "Lyon",
+    "image": "/images/studios/photo/img-sphoto-lyon-bellecour.webp"
+  },
+  {
+    "id": "sphoto-atelier-de-lile",
+    "title": "Atelier de l’Île",
+    "description": "Studio photo moderne sur l'Île de Nantes avec fonds colorés et assistance lumière incluse.",
+    "rating": 4.8,
+    "size": 55,
+    "capacity": 5,
+    "tag": "Photo",
+    "city": "Nantes",
+    "image": "/images/studios/photo/img-sphoto-nantes-atelier-ile.webp"
+  },
+  {
+    "id": "sphoto-lumiere-63",
+    "title": "Lumière 63",
+    "description": "Situé à deux pas de Jaude, ce studio photo à Clermont-Ferrand propose un espace lumineux avec fonds variés.",
+    "rating": 4.7,
+    "size": 38,
+    "capacity": 6,
+    "tag": "Photo",
+    "city": "Clermont-Ferrand",
+    "image": "/images/studios/photo/img-sphoto-clf-lumiere63.webp"
+  },
+  {
+    "id": "sphoto-atelier-volcan",
+    "title": "Atelier Volcan",
+    "description": "Studio photo cosy à Clermont-Ferrand, idéal pour portraits, e-commerce et packshot avec lumière naturelle et flashs professionnels.",
+    "rating": 4.5,
+    "size": 42,
+    "capacity": 5,
+    "tag": "Photo",
+    "city": "Clermont-Ferrand",
+    "image": "/images/studios/photo/img-sphoto-clf-atelier-volcan.webp"
+  },
+  {
+    "id": "svideo-studio-lumiere-11",
+    "title": "Studio Lumière 11",
+    "description": "Situé dans le 11e, ce studio vidéo-photo lumineux propose un cyclo blanc, lumière continue et fond vert pour shootings et tournages.",
+    "rating": 4.7,
+    "size": 80,
+    "capacity": 10,
+    "tag": "Vidéo",
+    "city": "Paris",
+    "image": "/images/studios/video/img-svideo-paris-lumiere11.webp"
+  },
+  {
+    "id": "svideo-studio-atlas",
+    "title": "Studio Atlas",
+    "description": "Studio vidéo et photo proche Part-Dieu, équipé de fonds variés et d'un espace maquillage pour shootings professionnels et vidéos.",
+    "rating": 4.5,
+    "size": 65,
+    "capacity": 8,
+    "tag": "Vidéo",
+    "city": "Lyon",
+    "image": "/images/studios/video/img-svideo-lyon-atlas.webp"
+  },
+  {
+    "id": "svideo-studio-pixel-sud",
+    "title": "Studio Pixel Sud",
+    "description": "Situé à la Joliette, ce studio propose un espace modulable avec cyclo, lumière naturelle et équipements pour clips, interviews ou packshots.",
+    "rating": 4.6,
+    "size": 90,
+    "capacity": 12,
+    "tag": "Vidéo",
+    "city": "Marseille",
+    "image": "/images/studios/video/img-svideo-marseille-pixel-sud.webp"
+  }
+]
