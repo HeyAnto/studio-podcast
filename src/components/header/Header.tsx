@@ -40,12 +40,20 @@ export default function Header() {
             <ul>
               <li>
                 <a
+                  href="/studios"
+                  className={`${styles.navLink} ${
+                    isActive("/studios") ? styles.active : ""
+                  } text-sm`}
+                >
+                  Trouver un studio
+                </a>
+                <a
                   href="/location-studio"
                   className={`${styles.navLink} ${
                     isActive("/location-studio") ? styles.active : ""
                   } text-sm`}
                 >
-                  Trouver un studio
+                  Location studio
                 </a>
                 <button
                   onClick={toggleMenu}
@@ -53,19 +61,11 @@ export default function Header() {
                     isMenuOpen ? styles.active : ""
                   } text-sm`}
                 >
-                  Location studio
+                  Nos Studios
                   <div className={styles.navLinkIcon}>
                     <IconChevronDown />
                   </div>
                 </button>
-                <a
-                  href="/studios"
-                  className={`${styles.navLink} ${
-                    isActive("/studios") ? styles.active : ""
-                  } text-sm`}
-                >
-                  Nos studios
-                </a>
               </li>
             </ul>
           </nav>
