@@ -44,6 +44,28 @@
     "image": "/images/studios/podcast/img-spod-clf-le-micro-volcanique.webp"
   },
   {
+    "id": "spod-studio-voltaire",
+    "title": "Studio Voltaire",
+    "description": "Parfait pour enregistrer des interviews, des séries narratives ou des lives.",
+    "rating": 4.8,
+    "size": 28,
+    "capacity": 6,
+    "tag": "Podcast",
+    "city": "Paris",
+    "image": "/images/studios/podcast/img-spod-paris-voltaire.webp"
+  },
+  {
+    "id": "spod-studio-echo",
+    "title": "Studio Écho",
+    "description": "Un studio podcast à Paris offrant un son net et une atmosphère cosy, parfait pour interviews et émissions.",
+    "rating": 4.8,
+    "size": 22,
+    "capacity": 5,
+    "tag": "Podcast",
+    "city": "Paris",
+    "image": "/images/studios/podcast/img-spod-paris-echo.webp"
+  },
+  {
     "id": "sphoto-lumiere-du-11e",
     "title": "Lumière du 11e",
     "description": "Studio photo lumineux dans le 11e à Paris avec fonds variés et éclairages professionnels.",
@@ -97,6 +119,17 @@
     "tag": "Photo",
     "city": "Clermont-Ferrand",
     "image": "/images/studios/photo/img-sphoto-clf-atelier-volcan.webp"
+  },
+  {
+    "id": "sphoto-lumiere-provence",
+    "title": "Lumière Provence",
+    "description": "Studio photo à Marseille baigné de lumière naturelle, parfait pour portraits et shootings créatifs dans une ambiance épurée.",
+    "rating": 4.8,
+    "size": 55,
+    "capacity": 6,
+    "tag": "Photo",
+    "city": "Marseille",
+    "image": "/images/studios/photo/img-sphoto-marseille-lumiere-provence.webp"
   },
   {
     "id": "svideo-studio-lumiere-11",
