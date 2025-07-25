@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import IconPhoto from "../icons/IconPhoto";
 import IconPodcast from "../icons/IconPodcast";
 import IconVideo from "../icons/IconVideo";
@@ -8,11 +8,22 @@ import styles from "./Search.module.css";
 
 interface StudiosSearchProps {
   onSearch: (studioType: string, city: string) => void;
+  initialType?: string;
+  initialCity?: string;
 }
 
-export default function StudiosSearch({ onSearch }: StudiosSearchProps) {
-  const [selectedStudioType, setSelectedStudioType] = useState("Podcast");
-  const [selectedCity, setSelectedCity] = useState("Paris");
+export default function StudiosSearch({
+  onSearch,
+  initialType = "Podcast",
+  initialCity = "Paris",
+}: StudiosSearchProps) {
+  const [selectedStudioType, setSelectedStudioType] = useState(initialType);
+  const [selectedCity, setSelectedCity] = useState(initialCity);
+
+  useEffect(() => {
+    setSelectedStudioType(initialType);
+    setSelectedCity(initialCity);
+  }, [initialType, initialCity]);
 
   const studioTypes = [
     { type: "Podcast", icon: <IconPodcast /> },
