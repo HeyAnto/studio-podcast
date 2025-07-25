@@ -1,7 +1,7 @@
 import IconPhoto from "../icons/IconPhoto";
 import IconPodcast from "../icons/IconPodcast";
 import IconVideo from "../icons/IconVideo";
-import styles from "./HeroSearch.module.css";
+import styles from "./Search.module.css";
 
 export default function HeroSearch() {
   return (
@@ -32,9 +32,6 @@ export default function HeroSearch() {
             <p className="text-3xl font-medium">Paris</p>
           </button>
           <button className="filterCityButton">
-            <p className="text-3xl font-medium">Clermont-Ferrand</p>
-          </button>
-          <button className="filterCityButton">
             <p className="text-3xl font-medium">Lyon</p>
           </button>
           <button className="filterCityButton">
@@ -42,6 +39,12 @@ export default function HeroSearch() {
           </button>
           <button className="filterCityButton">
             <p className="text-3xl font-medium">Nantes</p>
+          </button>
+          <button className="filterCityButton">
+            <p className="text-3xl font-medium">Clermont-Ferrand</p>
+          </button>
+          <button className="filterCityButton">
+            <p className="text-3xl font-medium">Tout</p>
           </button>
         </div>
         <button className="secondaryButton">
