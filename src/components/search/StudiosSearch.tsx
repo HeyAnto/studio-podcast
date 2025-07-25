@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import IconPhoto from "../icons/IconPhoto";
 import IconPodcast from "../icons/IconPodcast";
 import IconVideo from "../icons/IconVideo";
@@ -19,11 +19,23 @@ export default function StudiosSearch({
 }: StudiosSearchProps) {
   const [selectedStudioType, setSelectedStudioType] = useState(initialType);
   const [selectedCity, setSelectedCity] = useState(initialCity);
+  const onSearchRef = useRef(onSearch);
+
+  // Keep the ref updated
+  useEffect(() => {
+    onSearchRef.current = onSearch;
+  }, [onSearch]);
+
+  // Memoize the search function to prevent unnecessary re-renders
+    onSearchRef.current(studioType, city);
+  }, []);
 
   useEffect(() => {
     setSelectedStudioType(initialType);
     setSelectedCity(initialCity);
-  }, [initialType, initialCity]);
+    // Trigger initial search
+    performSearch(initialType, initialCity);
+  }, [initialType, initialCity, performSearch]);
 
   const studioTypes = [
     { type: "Podcast", icon: <IconPodcast /> },
@@ -40,17 +52,15 @@ export default function StudiosSearch({
     "Tout",
   ];
 
-  const handleStudioTypeClick = (type: string) => {
+  const handleStudioTypeClick = useCallback((type: string) => {
     setSelectedStudioType(type);
-  };
+    performSearch(type, selectedCity);
+  }, [selectedCity, performSearch]);
 
-  const handleCityClick = (city: string) => {
+  const handleCityClick = useCallback((city: string) => {
     setSelectedCity(city);
-  };
-
-  const handleSearch = () => {
-    onSearch(selectedStudioType, selectedCity);
-  };
+    performSearch(selectedStudioType, city);
+  }, [selectedStudioType, performSearch]);
 
   return (
     <div className="text-container gap-50">
@@ -84,9 +94,6 @@ export default function StudiosSearch({
           </button>
         ))}
       </div>
-      <button className="secondaryButton" onClick={handleSearch}>
-        <p className="text-base">Démarrer votre recherche</p>
-      </button>
     </div>
   );
 }
