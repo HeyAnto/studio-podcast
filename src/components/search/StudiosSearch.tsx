@@ -27,6 +27,7 @@ export default function StudiosSearch({
   }, [onSearch]);
 
   // Memoize the search function to prevent unnecessary re-renders
+  const performSearch = useCallback((studioType: string, city: string) => {
     onSearchRef.current(studioType, city);
   }, []);
 
