@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import CityCard from "../components/cards/CityCard";
 import HomeCard from "../components/cards/HomeCard";
 import StepCard from "../components/cards/StepCard";
-import HeroSearch from "../components/hero-search/HeroSearch";
+import HeroSearch from "../components/search/HeroSearch";
 
 export const metadata: Metadata = {
   title: "Studio Podcast",
