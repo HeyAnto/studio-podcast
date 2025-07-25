@@ -31,7 +31,7 @@ export default function HeaderMenu({ onOverlayClick }: HeaderMenuProps) {
             imageSrc="/images/type-studio/img-menu-podcast.webp"
             imageAlt="Image Alt"
             title="Studio Podcast"
-            description="Description"
+            description="Trouvez le studio podcast idéal pour vos enregistrements."
             isActive={isActive("/location-studio/studio-podcast")}
           />
           <MenuCard
@@ -39,7 +39,7 @@ export default function HeaderMenu({ onOverlayClick }: HeaderMenuProps) {
             imageSrc="/images/type-studio/img-menu-photo.webp"
             imageAlt="Image Alt"
             title="Studio Photo"
-            description="Description"
+            description="Trouvez le studio photo idéal pour vos shootings, portraits, mode ou e-commerce."
             isActive={isActive("/location-studio/studio-photo")}
           />
           <MenuCard
@@ -47,7 +47,7 @@ export default function HeaderMenu({ onOverlayClick }: HeaderMenuProps) {
             imageSrc="/images/type-studio/img-menu-video.webp"
             imageAlt="Image Alt"
             title="Studio Vidéo"
-            description="Description"
+            description="Trouvez le studio vidéo idéal pour vos tournages, clips, pubs ou streaming."
             isActive={isActive("/location-studio/studio-video")}
           />
         </div>
