@@ -21,12 +21,10 @@ export default function StudiosSearch({
   const [selectedCity, setSelectedCity] = useState(initialCity);
   const onSearchRef = useRef(onSearch);
 
-  // Keep the ref updated
   useEffect(() => {
     onSearchRef.current = onSearch;
   }, [onSearch]);
 
-  // Memoize the search function to prevent unnecessary re-renders
   const performSearch = useCallback((studioType: string, city: string) => {
     onSearchRef.current(studioType, city);
   }, []);
@@ -34,7 +32,6 @@ export default function StudiosSearch({
   useEffect(() => {
     setSelectedStudioType(initialType);
     setSelectedCity(initialCity);
-    // Trigger initial search
     performSearch(initialType, initialCity);
   }, [initialType, initialCity, performSearch]);
 
@@ -53,15 +50,21 @@ export default function StudiosSearch({
     "Tout",
   ];
 
-  const handleStudioTypeClick = useCallback((type: string) => {
-    setSelectedStudioType(type);
-    performSearch(type, selectedCity);
-  }, [selectedCity, performSearch]);
+  const handleStudioTypeClick = useCallback(
+    (type: string) => {
+      setSelectedStudioType(type);
+      performSearch(type, selectedCity);
+    },
+    [selectedCity, performSearch]
+  );
 
-  const handleCityClick = useCallback((city: string) => {
-    setSelectedCity(city);
-    performSearch(selectedStudioType, city);
-  }, [selectedStudioType, performSearch]);
+  const handleCityClick = useCallback(
+    (city: string) => {
+      setSelectedCity(city);
+      performSearch(selectedStudioType, city);
+    },
+    [selectedStudioType, performSearch]
+  );
 
   return (
     <div className="text-container gap-50">
