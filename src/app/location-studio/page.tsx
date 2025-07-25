@@ -165,7 +165,7 @@ const LocationStudioPage = () => {
         title="Prêt à concrétiser votre projet ?"
         description={`Trouvez le studio qui fera la différence pour votre prochaine production !`}
         button="Nos studios"
-        buttonLink="/studios"
+        buttonLink="/studios/all/all"
         footerImg="/images/type-studio/img-footer-podcast.webp"
       />
     </main>

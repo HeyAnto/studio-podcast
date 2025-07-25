@@ -19,7 +19,6 @@ export const metadata: Metadata = {
 };
 
 const LocationStudioPage = () => {
-  // Filter podcast studios and take only the first 3
   const podcastStudios = studiosData
     .filter((studio) => studio.tag === "Podcast")
     .slice(0, 3);
@@ -70,31 +69,31 @@ const LocationStudioPage = () => {
         </div>
         <div className="flex flex-wrap items-center justify-center gap-16">
           <CityCard
-            href="/"
+            href="/studios/podcast/paris"
             imageSrc="/images/city/img-city-paris.webp"
             imageAlt="Paris"
             title="Paris"
           />
           <CityCard
-            href="/"
+            href="/studios/podcast/lyon"
             imageSrc="/images/city/img-city-lyon.webp"
             imageAlt="Lyon"
             title="Lyon"
           />
           <CityCard
-            href="/"
+            href="/studios/podcast/marseille"
             imageSrc="/images/city/img-city-marseille.webp"
             imageAlt="Marseille"
             title="Marseille"
           />
           <CityCard
-            href="/"
+            href="/studios/podcast/nantes"
             imageSrc="/images/city/img-city-nantes.webp"
             imageAlt="Nantes"
             title="Nantes"
           />
           <CityCard
-            href="/"
+            href="/studios/podcast/clermont-fd"
             imageSrc="/images/city/img-city-clermont-fd.webp"
             imageAlt="Clermont-Ferrand"
             title="Clermont-Ferrand"
@@ -153,7 +152,7 @@ const LocationStudioPage = () => {
         title="Prêt à concrétiser votre projet ?"
         description={`Trouvez le studio qui fera la différence pour votre prochaine production !`}
         button="Nos studios"
-        buttonLink="/studios"
+        buttonLink="/studios/podcast/all"
         footerImg="/images/type-studio/img-footer-podcast.webp"
       />
     </main>

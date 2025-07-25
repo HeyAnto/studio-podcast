@@ -83,31 +83,31 @@ const HomePage = () => {
         </div>
         <div className="flex flex-wrap items-center justify-center gap-16">
           <CityCard
-            href="/"
+            href="/studios/all/paris"
             imageSrc="/images/city/img-city-paris.webp"
             imageAlt="Paris"
             title="Paris"
           />
           <CityCard
-            href="/"
+            href="/studios/all/lyon"
             imageSrc="/images/city/img-city-lyon.webp"
             imageAlt="Lyon"
             title="Lyon"
           />
           <CityCard
-            href="/"
+            href="/studios/all/marseille"
             imageSrc="/images/city/img-city-marseille.webp"
             imageAlt="Marseille"
             title="Marseille"
           />
           <CityCard
-            href="/"
+            href="/studios/all/nantes"
             imageSrc="/images/city/img-city-nantes.webp"
             imageAlt="Nantes"
             title="Nantes"
           />
           <CityCard
-            href="/"
+            href="/studios/all/clermont-fd"
             imageSrc="/images/city/img-city-clermont-fd.webp"
             imageAlt="Clermont-Ferrand"
             title="Clermont-Ferrand"
