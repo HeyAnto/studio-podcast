@@ -22,6 +22,9 @@ export default function Header() {
     if (href === "/") {
       return pathname === "/";
     }
+    if (href === "/studios") {
+      return pathname.startsWith("/studios");
+    }
     return pathname === href;
   };
 
@@ -40,7 +43,7 @@ export default function Header() {
             <ul>
               <li>
                 <a
-                  href="/studios"
+                  href="/studios/podcast/all"
                   className={`${styles.navLink} ${
                     isActive("/studios") ? styles.active : ""
                   } text-sm`}
