@@ -26,13 +26,21 @@ export default function Footer() {
         <div className="flex flex-column">
           <p className="text-base">
             Studio Podcast © 2025 par{" "}
-            <a className="linkButton" href="/">
+            <a
+              className="linkButton"
+              href="https://www.click2cell.com/"
+              target="_blank"
+            >
               Click2Cell
             </a>
           </p>
           <p className="text-sm text-grey-2">
             Design & développement réalisés par{" "}
-            <a className="linkButton" href="/">
+            <a
+              className="linkButton"
+              href="https://www.linkedin.com/in/antoooo/"
+              target="_blank"
+            >
               Antonin SIOLY
             </a>
           </p>
