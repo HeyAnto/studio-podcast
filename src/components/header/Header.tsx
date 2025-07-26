@@ -3,11 +3,15 @@
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import IconChevronDown from "../icons/IconChevronDown";
+import IconClose from "../icons/IconClose";
+import IconMenu from "../icons/IconMenu";
+import BurgerMenu from "./BurgerMenu";
 import styles from "./Header.module.css";
 import LocationMenu from "./LocationMenu";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
   const pathname = usePathname();
 
   const toggleMenu = () => {
@@ -16,6 +20,14 @@ export default function Header() {
 
   const closeMenu = () => {
     setIsMenuOpen(false);
+  };
+
+  const toggleBurgerMenu = () => {
+    setIsBurgerMenuOpen(!isBurgerMenuOpen);
+  };
+
+  const closeBurgerMenu = () => {
+    setIsBurgerMenuOpen(false);
   };
 
   const isActive = (href: string) => {
@@ -48,7 +60,7 @@ export default function Header() {
                     isActive("/studios") ? styles.active : ""
                   } text-sm`}
                 >
-                  Trouver un studio
+                  Trouver un Studio
                 </a>
                 <a
                   href="/location-studio"
@@ -56,7 +68,7 @@ export default function Header() {
                     isActive("/location-studio") ? styles.active : ""
                   } text-sm`}
                 >
-                  Location studio
+                  Location Studio
                 </a>
                 <button
                   onClick={toggleMenu}
@@ -72,12 +84,30 @@ export default function Header() {
               </li>
             </ul>
           </nav>
-          <a href="/" className="primaryButton text-base">
+          <a
+            href="/contact"
+            className={`primaryButton text-base ${styles.contactButton}`}
+          >
             Contactez-nous
           </a>
+          <button
+            className={`primaryButton ${styles.burgerButton}`}
+            onClick={toggleBurgerMenu}
+          >
+            {isBurgerMenuOpen ? (
+              <div className="linkIcon">
+                <IconClose />
+              </div>
+            ) : (
+              <div className="linkIcon">
+                <IconMenu />
+              </div>
+            )}
+          </button>
         </div>
       </header>
       {isMenuOpen && <LocationMenu onOverlayClick={closeMenu} />}
+      {isBurgerMenuOpen && <BurgerMenu onClose={closeBurgerMenu} />}
     </>
   );
 }
