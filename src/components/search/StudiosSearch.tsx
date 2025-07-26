@@ -52,10 +52,12 @@ export default function StudiosSearch({
 
   const handleStudioTypeClick = useCallback(
     (type: string) => {
-      setSelectedStudioType(type);
-      performSearch(type, selectedCity);
+      // Allow deselection of studio type - if clicked type is already selected, deselect it
+      const newType = selectedStudioType === type ? "Tout" : type;
+      setSelectedStudioType(newType);
+      performSearch(newType, selectedCity);
     },
-    [selectedCity, performSearch]
+    [selectedStudioType, selectedCity, performSearch]
   );
 
   const handleCityClick = useCallback(
@@ -71,19 +73,31 @@ export default function StudiosSearch({
       <h1 className="font-heading text-5xl leading-none text-center">
         Trouver un studio
       </h1>
-      <div className={styles.filterStudio}>
-        {studioTypes.map((studio) => (
-          <button
-            key={studio.type}
-            className={`filterStudioButton ${
-              selectedStudioType === studio.type ? "active" : ""
-            }`}
-            onClick={() => handleStudioTypeClick(studio.type)}
-          >
-            <div className="filterStudioIcon">{studio.icon}</div>
-            <p className="text-base">{studio.type}</p>
-          </button>
-        ))}
+      <div className="text-container gap-16">
+        {selectedStudioType === "Tout" && (
+          <p className="text-sm text-center text-grey-2">
+            Tous les types de studios • Cliquez sur un type pour filtrer
+          </p>
+        )}
+        <div className={styles.filterStudio}>
+          {studioTypes.map((studio) => (
+            <button
+              key={studio.type}
+              className={`filterStudioButton ${
+                selectedStudioType === studio.type ? "active" : ""
+              }`}
+              onClick={() => handleStudioTypeClick(studio.type)}
+              title={
+                selectedStudioType === studio.type
+                  ? `Déselectionner ${studio.type}`
+                  : `Sélectionner ${studio.type}`
+              }
+            >
+              <div className="filterStudioIcon">{studio.icon}</div>
+              <p className="text-base">{studio.type}</p>
+            </button>
+          ))}
+        </div>
       </div>
       <div className={styles.filterCity}>
         {cities.map((city) => (

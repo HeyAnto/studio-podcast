@@ -28,7 +28,9 @@ export default function HeroSearch() {
   ];
 
   const handleStudioTypeClick = (type: string) => {
-    setSelectedStudioType(type);
+    // Allow deselection of studio type - if clicked type is already selected, deselect it
+    const newType = selectedStudioType === type ? "Tout" : type;
+    setSelectedStudioType(newType);
   };
 
   const handleCityClick = (city: string) => {
@@ -57,6 +59,8 @@ export default function HeroSearch() {
         return "/images/type-studio/img-home-photo.webp";
       case "Vidéo":
         return "/images/type-studio/img-home-video.webp";
+      case "Tout":
+        return "/images/type-studio/img-home-podcast.webp"; // Default image when all types selected
       case "Podcast":
       default:
         return "/images/type-studio/img-home-podcast.webp";
@@ -66,19 +70,31 @@ export default function HeroSearch() {
   return (
     <div className={styles.heroSearch}>
       <div className={styles.heroSearchContainer}>
-        <div className={styles.filterStudio}>
-          {studioTypes.map((studio) => (
-            <button
-              key={studio.type}
-              className={`filterStudioButton ${
-                selectedStudioType === studio.type ? "active" : ""
-              }`}
-              onClick={() => handleStudioTypeClick(studio.type)}
-            >
-              <div className="filterStudioIcon">{studio.icon}</div>
-              <p className="text-base">{studio.type}</p>
-            </button>
-          ))}
+        <div className="text-container gap-16">
+          {selectedStudioType === "Tout" && (
+            <p className="text-sm text-center text-grey-2">
+              Tous les types de studios • Cliquez sur un type pour filtrer
+            </p>
+          )}
+          <div className={styles.filterStudio}>
+            {studioTypes.map((studio) => (
+              <button
+                key={studio.type}
+                className={`filterStudioButton ${
+                  selectedStudioType === studio.type ? "active" : ""
+                }`}
+                onClick={() => handleStudioTypeClick(studio.type)}
+                title={
+                  selectedStudioType === studio.type
+                    ? `Déselectionner ${studio.type}`
+                    : `Sélectionner ${studio.type}`
+                }
+              >
+                <div className="filterStudioIcon">{studio.icon}</div>
+                <p className="text-base">{studio.type}</p>
+              </button>
+            ))}
+          </div>
         </div>
         <div className={styles.filterCity}>
           {cities.map((city) => (
