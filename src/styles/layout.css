@@ -32,3 +32,22 @@ section {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
 }
+
+/* Responsive Design */
+@media (max-width: 1140px) {
+  .studios-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .studios-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 0 20px;
+  }
+}

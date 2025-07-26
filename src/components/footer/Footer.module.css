@@ -39,3 +39,18 @@
   align-items: center;
   gap: 50px;
 }
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .footerContainer {
+    padding: 28px 20px;
+  }
+
+  .footerContainer div {
+    gap: 28px;
+  }
+
+  .nav ul li {
+    gap: 28px;
+  }
+}

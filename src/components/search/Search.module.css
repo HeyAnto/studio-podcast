@@ -43,3 +43,16 @@
   align-items: center;
   gap: 16px;
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .heroSearch img {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .filterStudio {
+    flex-wrap: wrap;
+  }
+}

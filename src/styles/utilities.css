@@ -80,6 +80,9 @@
 }
 
 /* Gap */
+.no-gap {
+  gap: 0px !important;
+}
 .gap-8 {
   gap: calc(var(--spacing-unit) * 4); /* 8px */
 }

@@ -114,7 +114,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 110px 20px 20px 20px;
+  padding: 110px 50px 50px 50px;
   gap: 20px;
   background-color: var(--color-white);
   z-index: 20;
@@ -157,5 +157,15 @@
 
   .burgerButton {
     display: flex;
+  }
+}
+
+@media (max-width: 600px) {
+  .headerContainer {
+    padding: 28px 20px;
+  }
+
+  .burgerMenu {
+    padding: 110px 20px 20px 20px;
   }
 }

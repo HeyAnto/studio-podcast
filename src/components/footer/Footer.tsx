@@ -23,7 +23,7 @@ export default function Footer() {
             </ul>
           </nav>
         </div>
-        <div className="flex flex-column">
+        <div className="flex flex-column no-gap">
           <p className="text-base">
             Studio Podcast © 2025 par{" "}
             <a
