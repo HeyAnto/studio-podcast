@@ -39,6 +39,20 @@ export default function BurgerMenu({ onClose }: BurgerMenuProps) {
               Studio Vidéo
             </a>
           </div>
+          <a
+            href="/politique-de-confidentialite"
+            className={styles.burgerNavLink}
+            onClick={onClose}
+          >
+            Politique de confidentialité
+          </a>
+          <a
+            href="/mentions-legales"
+            className={styles.burgerNavLink}
+            onClick={onClose}
+          >
+            Mentions légales
+          </a>
         </div>
         <a
           href="/contact"
