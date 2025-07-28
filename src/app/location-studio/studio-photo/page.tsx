@@ -36,16 +36,16 @@ const LocationStudioPhotoPage = () => {
 
       <section className="max-w-md justify-center gap-50">
         <div className="text-container gap-16">
-          <div className="text-container gap-16">
-            <h2 className="font-heading text-5xl leading-none text-center">
-              Pourquoi louer un studio photo professionnel ?
-            </h2>
-            <p className="text-lg leading-normal text-center text-grey-2">
-              Opter pour la location d'un studio photo dédié est essentiel pour
-              la qualité et la polyvalence de vos visuels. Voici les avantages
-              majeurs.
-            </p>
-          </div>
+          <h2 className="font-heading text-5xl leading-none text-center">
+            Pourquoi louer un studio photo professionnel ?
+          </h2>
+          <p className="text-lg leading-normal text-center text-grey-2">
+            Opter pour la location d'un studio photo dédié est essentiel pour la
+            qualité et la polyvalence de vos visuels. Voici les avantages
+            majeurs.
+          </p>
+        </div>
+        <div className="text-container gap-16">
           <ContentList
             fontSizes="text-lg"
             title="Maîtrise de la Lumière :"
@@ -121,16 +121,16 @@ const LocationStudioPhotoPage = () => {
 
       <section className="max-w-md justify-center gap-50">
         <div className="text-container gap-16">
-          <div className="text-container gap-16">
-            <h2 className="font-heading text-5xl leading-none text-center">
-              Ce que vous trouverez dans nos studios photo
-            </h2>
-            <p className="text-lg leading-normal text-center text-grey-2">
-              Nos studios photo sont équipés pour répondre aux exigences des
-              professionnels et des projets créatifs. Voici une liste non
-              exhaustive des équipements et aménagements typiques.
-            </p>
-          </div>
+          <h2 className="font-heading text-5xl leading-none text-center">
+            Ce que vous trouverez dans nos studios photo
+          </h2>
+          <p className="text-lg leading-normal text-center text-grey-2">
+            Nos studios photo sont équipés pour répondre aux exigences des
+            professionnels et des projets créatifs. Voici une liste non
+            exhaustive des équipements et aménagements typiques.
+          </p>
+        </div>
+        <div className="text-container gap-16">
           <ContentList
             fontSizes="text-lg"
             title="Systèmes d'Éclairage Avancés :"
@@ -174,15 +174,15 @@ const LocationStudioPhotoPage = () => {
 
       <section className="max-w-md justify-center gap-50">
         <div className="text-container gap-16">
-          <div className="text-container gap-16">
-            <h2 className="font-heading text-5xl leading-none text-center">
-              Idéal pour quels projets photo ?
-            </h2>
-            <p className="text-lg leading-normal text-center text-grey-2">
-              Nos studios photo sont polyvalents et conviennent à une large
-              gamme de projets.
-            </p>
-          </div>
+          <h2 className="font-heading text-5xl leading-none text-center">
+            Idéal pour quels projets photo ?
+          </h2>
+          <p className="text-lg leading-normal text-center text-grey-2">
+            Nos studios photo sont polyvalents et conviennent à une large gamme
+            de projets.
+          </p>
+        </div>
+        <div className="text-container gap-16">
           <ContentList
             fontSizes="text-lg"
             title="Portraits et Books :"

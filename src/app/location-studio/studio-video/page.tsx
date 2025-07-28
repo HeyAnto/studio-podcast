@@ -36,16 +36,16 @@ const LocationStudioVideoPage = () => {
 
       <section className="max-w-md justify-center gap-50">
         <div className="text-container gap-16">
-          <div className="text-container gap-16">
-            <h2 className="font-heading text-5xl leading-none text-center">
-              Pourquoi louer un studio vidéo professionnel ?
-            </h2>
-            <p className="text-lg leading-normal text-center text-grey-2">
-              La location d'un studio vidéo dédié est un atout majeur pour la
-              qualité et l'efficacité de vos productions. Voici les avantages
-              clés.
-            </p>
-          </div>
+          <h2 className="font-heading text-5xl leading-none text-center">
+            Pourquoi louer un studio vidéo professionnel ?
+          </h2>
+          <p className="text-lg leading-normal text-center text-grey-2">
+            La location d'un studio vidéo dédié est un atout majeur pour la
+            qualité et l'efficacité de vos productions. Voici les avantages
+            clés.
+          </p>
+        </div>
+        <div className="text-container gap-16">
           <ContentList
             fontSizes="text-lg"
             title="Qualité d'Image Supérieure :"
@@ -121,15 +121,15 @@ const LocationStudioVideoPage = () => {
 
       <section className="max-w-md justify-center gap-50">
         <div className="text-container gap-16">
-          <div className="text-container gap-16">
-            <h2 className="font-heading text-5xl leading-none text-center">
-              Ce que vous trouverez dans nos studios vidéo
-            </h2>
-            <p className="text-lg leading-normal text-center text-grey-2">
-              Nos studios vidéo sont rigoureusement sélectionnés pour répondre
-              aux exigences des productions audiovisuelles modernes.
-            </p>
-          </div>
+          <h2 className="font-heading text-5xl leading-none text-center">
+            Ce que vous trouverez dans nos studios vidéo
+          </h2>
+          <p className="text-lg leading-normal text-center text-grey-2">
+            Nos studios vidéo sont rigoureusement sélectionnés pour répondre aux
+            exigences des productions audiovisuelles modernes.
+          </p>
+        </div>
+        <div className="text-container gap-16">
           <ContentList
             fontSizes="text-lg"
             title="Caméras et Optiques :"
@@ -178,15 +178,15 @@ const LocationStudioVideoPage = () => {
 
       <section className="max-w-md justify-center gap-50">
         <div className="text-container gap-16">
-          <div className="text-container gap-16">
-            <h2 className="font-heading text-5xl leading-none text-center">
-              Idéal pour quels projets vidéo ?
-            </h2>
-            <p className="text-lg leading-normal text-center text-grey-2">
-              Nos studios vidéo sont parfaitement adaptés à une multitude de
-              projets audiovisuels.
-            </p>
-          </div>
+          <h2 className="font-heading text-5xl leading-none text-center">
+            Idéal pour quels projets vidéo ?
+          </h2>
+          <p className="text-lg leading-normal text-center text-grey-2">
+            Nos studios vidéo sont parfaitement adaptés à une multitude de
+            projets audiovisuels.
+          </p>
+        </div>
+        <div className="text-container gap-16">
           <ContentList
             fontSizes="text-lg"
             title="Interviews et Talk-shows :"
