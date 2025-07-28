@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-const LocationStudioPage = () => {
+const LocationStudioPodcastPage = () => {
   const podcastStudios = studiosData
     .filter((studio) => studio.tag === "Podcast")
     .slice(0, 3);
@@ -159,4 +159,4 @@ const LocationStudioPage = () => {
   );
 };
 
-export default LocationStudioPage;
+export default LocationStudioPodcastPage;
