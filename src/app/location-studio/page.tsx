@@ -39,7 +39,7 @@ const LocationStudioPage = () => {
           </p>
         </div>
 
-        <div className="contentCard items-center gap-28">
+        <div className="contentCard gap-28">
           <div className="flex flex-column gap-16">
             <h3 className="text-2xl text-center leading-none">
               Location Studio Podcast
@@ -68,7 +68,7 @@ const LocationStudioPage = () => {
           </a>
         </div>
 
-        <div className="contentCard items-center gap-28">
+        <div className="contentCard gap-28">
           <div className="flex flex-column gap-16">
             <h3 className="text-2xl text-center leading-none">
               Location Studio Photo
@@ -98,7 +98,7 @@ const LocationStudioPage = () => {
           </a>
         </div>
 
-        <div className="contentCard items-center gap-28">
+        <div className="contentCard gap-28">
           <div className="flex flex-column gap-16">
             <h3 className="text-2xl text-center leading-none">
               Location Studio Vidéo
