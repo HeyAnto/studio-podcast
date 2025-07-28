@@ -85,7 +85,7 @@ export default function Header() {
             </ul>
           </nav>
           <a
-            href="/contact"
+            href="mailto:contact@studiopodcastexemple.com"
             className={`primaryButton text-base ${styles.contactButton}`}
           >
             Contactez-nous

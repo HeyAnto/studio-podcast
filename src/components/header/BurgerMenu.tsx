@@ -55,7 +55,7 @@ export default function BurgerMenu({ onClose }: BurgerMenuProps) {
           </a>
         </div>
         <a
-          href="/contact"
+          href="mailto:contact@studiopodcastexemple.com"
           className="primaryButton text-base"
           onClick={onClose}
         >

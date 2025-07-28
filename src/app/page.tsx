@@ -143,7 +143,10 @@ const HomePage = () => {
             description="Faites partie d'un réseau dynamique de professionnels et passionnés de l'audio et de l'image. Propriétaire de studio ? Référencez votre espace dès aujourd'hui et multipliez vos locations !"
           />
         </div>
-        <a className="secondaryButton" href="/">
+        <a
+          className="secondaryButton"
+          href="mailto:contact@studiopodcastexemple.com"
+        >
           <p className="text-base">Référencez votre espace</p>
         </a>
       </section>
