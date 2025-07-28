@@ -5,8 +5,8 @@ export const metadata: Metadata = {
   description:
     "Trouvez et louez votre studio d'enregistrement pour podcast, shooting photo ou production vidéo. Découvrez les meilleures adresses à Paris, Lyon, Marseille et plus encore.",
   robots: {
-    index: true,
-    follow: true,
+    index: false,
+    follow: false,
     noarchive: false,
     nosnippet: false,
   },
