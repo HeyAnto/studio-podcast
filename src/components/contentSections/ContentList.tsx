@@ -1,8 +1,8 @@
 import IconArrowRight from "../icons/IconArrowRight";
 export default function ContentList({
   fontSizes = "",
-  title = "Titre",
-  description = "Description",
+  title = "",
+  description = "",
 }) {
   return (
     <div className="min-w-screen flex gap-16">
