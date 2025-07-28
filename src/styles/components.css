@@ -120,7 +120,7 @@
   width: 100%;
   max-width: 400px;
   height: 100%;
-  min-height: 550px;
+  min-height: 500px;
   background-color: var(--color-grey-4);
   transition: all 0.3s;
 }
