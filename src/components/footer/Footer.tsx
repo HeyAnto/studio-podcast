@@ -13,10 +13,10 @@ export default function Footer() {
           <nav className={styles.nav}>
             <ul>
               <li>
-                <a className="linkButton" href="/">
+                <a className="linkButton" href="/politique-de-confidentialite">
                   Politique de confidentialité
                 </a>
-                <a className="linkButton" href="/">
+                <a className="linkButton" href="/mentions-legales">
                   Mentions légales
                 </a>
               </li>
