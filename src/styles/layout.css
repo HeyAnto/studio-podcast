@@ -22,7 +22,6 @@ section {
   max-width: 680px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .studios-grid {
